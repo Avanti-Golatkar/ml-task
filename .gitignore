@@ -1,0 +1,19 @@
+# Data
+X.npy
+y.npy
+
+# Models
+*.h5
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment
+.env
+.venv/
+
+data/
+*.keras
+*.pt
+*.pth
