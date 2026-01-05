@@ -19,7 +19,7 @@ y = np.load("y.npy")
 print("X shape:", X.shape)
 print("y shape:", y.shape)
 
-# Train / validation split
+
 X_train, X_val, y_train, y_val = train_test_split(
     X, y,
     test_size=0.2,
@@ -30,7 +30,7 @@ X_train, X_val, y_train, y_val = train_test_split(
 print("Training samples:", X_train.shape[0])
 print("Validation samples:", X_val.shape[0])
 
-# Build CNN model
+#CNN model
 model = Sequential([
     Input(shape=(224, 224, 3)),
 
@@ -57,7 +57,7 @@ model.compile(
 
 model.summary()
 
-# Train model
+#Training model
 history = model.fit(
     X_train,
     y_train,
@@ -66,7 +66,7 @@ history = model.fit(
     batch_size=16
 )
 
-# Save model locally (DO NOT COMMIT THIS FILE)
+
 model.save("fake_real_video_model.keras")
 
 print("Training complete. Model saved as fake_real_video_model.keras")
