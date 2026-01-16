@@ -168,7 +168,7 @@ This is supervised learning as the model learns by comparing predictions against
 * End-to-end pipeline works
 * Predictions are deterministic
 * Model is trained and saved correctly
-* Model accuracy: 
+* Model accuracy: 91.65
 * CSV is generated using the trained model
 
 This is the **baseline**.
